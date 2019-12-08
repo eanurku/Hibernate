@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+    <class name="com.Employee" table="EMPLOYEE">
+        <meta attribute="class-description">
+            test class
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="salary" type="big_decimal" column="salary"/>
+        <property name="firstname" type="string" column="firstname"/>
+        <property name="lastname" type="string" column="lastname"/>
+    </class>
+
+</hibernate-mapping>
