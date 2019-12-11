@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap">
+      <sourceFolder url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap/src/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap/lib-dev" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../Hibernate7_MappingSortedMap/lib-dev" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

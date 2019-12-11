@@ -3,6 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate1_CRUDOperations/Hibernate1_CRUDOperations.iml" filepath="$PROJECT_DIR$/Hibernate1_CRUDOperations/Hibernate1_CRUDOperations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate2_MappingSets/Hibernate2_MappingSets.iml" filepath="$PROJECT_DIR$/Hibernate2_MappingSets/Hibernate2_MappingSets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate3_MappingSortedSet/Hibernate3_MappingSortedSet.iml" filepath="$PROJECT_DIR$/Hibernate3_MappingSortedSet/Hibernate3_MappingSortedSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate4_MappingList/Hibernate4_MappingList.iml" filepath="$PROJECT_DIR$/Hibernate4_MappingList/Hibernate4_MappingList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate5_MappingCollection/Hibernate5_MappingCollection.iml" filepath="$PROJECT_DIR$/Hibernate5_MappingCollection/Hibernate5_MappingCollection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate6_MappingMap/Hibernate6_MappingMap.iml" filepath="$PROJECT_DIR$/Hibernate6_MappingMap/Hibernate6_MappingMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate7_MappingSortedMap/Hibernate7_MappingSortedMap.iml" filepath="$PROJECT_DIR$/Hibernate7_MappingSortedMap/Hibernate7_MappingSortedMap.iml" />
     </modules>
   </component>
 </project>
