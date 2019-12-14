@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+
+    <!--Employee class to EMPLOYEE table mapping -->
+    <class name="com.Employee" table="EMPLOYEE">
+        <meta attribute="class-description">
+            test class
+        </meta>
+        <id name="id" type="int" column="employee_id">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstname" type="string" column="firstname"/>
+        <property name="lastname" type="string" column="lastname"/>
+        <property name="salary" type="big_decimal" column="salary"/>
+        <set name="certificates" cascade="all" table="EMP_CERT">
+            <key column="employee_id"/>
+            <many-to-many column="certificate_id" class="com.Certificate"/>
+        </set>
+    </class>
+
+    <!--Certificate class to CERTIFICATE table mapping -->
+
+    <class name="com.Certificate" table="CERTIFICATE">
+        <id name="id" type="int" column="certificate_id">
+           <generator class="native"/>
+        </id>
+        <property name="certificateName" type="string" column="certificate_name"/>
+        <property name="certificateType" type="string" column="certificate_type"/>
+    </class>
+
+
+</hibernate-mapping>

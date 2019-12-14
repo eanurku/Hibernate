@@ -1,4 +1,4 @@
-package com.mappingsortedmap;
+package com.component;
 
 import com.Employee;
 import org.hibernate.Session;
@@ -9,14 +9,13 @@ import org.hibernate.cfg.Configuration;
 import java.util.Iterator;
 import java.util.List;
 
-public class HibernateMappingMapSelectAllDemo {
+public class HibernateMappingComponentSelectAll {
 
     static SessionFactory sfactory;
 
     public static void main(String[] args) {
 
         sfactory = new Configuration().configure().buildSessionFactory();
-
 
         getAllEmployee();
 
@@ -26,7 +25,6 @@ public class HibernateMappingMapSelectAllDemo {
 
             Session session = sfactory.openSession();
             Transaction tx = null;
-            Integer returnid = null;
             try {
                 tx = session.beginTransaction();
 

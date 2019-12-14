@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+
+    <!--Employee class to EMPLOYEE table mapping -->
+    <class name="com.Employee" table="EMPLOYEE">
+        <meta attribute="class-description">
+            test class
+        </meta>
+        <id name="id" type="int" column="employee_id">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstname" type="string" column="firstname"/>
+        <property name="lastname" type="string" column="lastname"/>
+        <property name="salary" type="big_decimal" column="salary"/>
+        <many-to-one name="address" column="address" class="com.Address" />
+
+    </class>
+
+    <!--Address class to ADDRESS table mapping -->
+
+    <class name="com.Address" table="ADDRESS">
+        <id name="id"  column="address_id">
+            <generator class="native"/>
+        </id>
+        <property name="street" type="string" column="street"/>
+        <property name="city" type="string" column="city"/>
+        <property name="state" type="string" column="state"/>
+        <property name="country" type="string" column="country"/>
+    </class>
+
+</hibernate-mapping>

@@ -1,4 +1,4 @@
-package com.mappingsortedmap;
+package com.manytomany;
 
 import com.Certificate;
 import com.Employee;
@@ -6,36 +6,37 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.Set;
 
-import java.util.HashMap;
-import java.util.Map;
+public class HibernateMappingManyToManyInsert {
 
-public class HibernateMappingMapUpdate {
     static SessionFactory sfactory;
-
     public static void main(String[] args) {
 
         sfactory = new Configuration().configure().buildSessionFactory();
 
-        HashMap<String, Certificate> cert = new HashMap<>();
-        cert.put("AS",new Certificate("as1","agri"));
-        updateEmployee(27,cert);
+
+        Set<Certificate> certs=new HashSet<>();
+        certs.add(new Certificate("cert","java"));
+        certs.add(new Certificate("cert","polity"));
+
+        Employee employee=new Employee("gonu2","kr",new BigDecimal("33.3"),certs);
+        addEmployee(employee);
 
     }
 
-    private static void updateEmployee(int empId,Map<String,Certificate> certificates) {
-
-
+    private static void addEmployee(Employee emp) {
 
         Session session = sfactory.openSession();
         Transaction tx = null;
-
+        Integer returnId = null;
         try {
             tx = session.beginTransaction();
 
-            Employee emp = session.get(Employee.class, empId);
-            Map<String, Certificate> cert = emp.getCertificates();
-            emp.setCertificates(certificates);
+             returnId = (Integer) session.save(emp);
+
             tx.commit();
         } catch (Exception e) {
 
@@ -45,6 +46,7 @@ public class HibernateMappingMapUpdate {
         } finally {
             session.close();
         }
+        System.out.println("employee return id="+returnId);
 
     }
 
