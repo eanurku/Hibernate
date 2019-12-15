@@ -20,5 +20,11 @@ this kind of error occurs if foreign key is refrencing the row but  index or lis
 in case of NULL list-index value(related to <list> tag) ,replace index value to int values like 0,1,2 as they are index position in list.
 in case of index column is NULL(related to <map> tag),either remove these rows or  replace it with Non-Null values.
 
+3.
+ERROR: Table 'testdb.hibernate_sequence' doesn't exist
 
+solution:
+set strategy to Identity in GeneratedValue annotation as given below instead of sequence or auto .
+
+@GeneratedValue(strategy = GenerationType.IDENTITY)
 

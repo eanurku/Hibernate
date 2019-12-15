@@ -5,6 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate10_ManyToManyMapping/Hibernate10_ManyToManyMapping.iml" filepath="$PROJECT_DIR$/Hibernate10_ManyToManyMapping/Hibernate10_ManyToManyMapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate11_ComponentMapping/Hibernate11_ComponentMapping.iml" filepath="$PROJECT_DIR$/Hibernate11_ComponentMapping/Hibernate11_ComponentMapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate12_AnnotationBasedCRUD/Hibernate12_AnnotationBasedCRUD.iml" filepath="$PROJECT_DIR$/Hibernate12_AnnotationBasedCRUD/Hibernate12_AnnotationBasedCRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate13_HQL/Hibernate13_HQL.iml" filepath="$PROJECT_DIR$/Hibernate13_HQL/Hibernate13_HQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate14_CriteriaQuery/Hibernate14_CriteriaQuery.iml" filepath="$PROJECT_DIR$/Hibernate14_CriteriaQuery/Hibernate14_CriteriaQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate15_NativeSQL/Hibernate15_NativeSQL.iml" filepath="$PROJECT_DIR$/Hibernate15_NativeSQL/Hibernate15_NativeSQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate16_BatchProcessing/Hibernate16_BatchProcessing.iml" filepath="$PROJECT_DIR$/Hibernate16_BatchProcessing/Hibernate16_BatchProcessing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate17_Interceptors/Hibernate17_Interceptors.iml" filepath="$PROJECT_DIR$/Hibernate17_Interceptors/Hibernate17_Interceptors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate18_Caching/Hibernate18_Caching.iml" filepath="$PROJECT_DIR$/Hibernate18_Caching/Hibernate18_Caching.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate1_CRUDOperations/Hibernate1_CRUDOperations.iml" filepath="$PROJECT_DIR$/Hibernate1_CRUDOperations/Hibernate1_CRUDOperations.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate2_MappingSets/Hibernate2_MappingSets.iml" filepath="$PROJECT_DIR$/Hibernate2_MappingSets/Hibernate2_MappingSets.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate3_MappingSortedSet/Hibernate3_MappingSortedSet.iml" filepath="$PROJECT_DIR$/Hibernate3_MappingSortedSet/Hibernate3_MappingSortedSet.iml" />

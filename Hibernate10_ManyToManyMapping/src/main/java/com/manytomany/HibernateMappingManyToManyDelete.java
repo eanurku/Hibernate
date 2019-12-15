@@ -12,7 +12,7 @@ public class HibernateMappingManyToManyDelete {
 
     public static void main(String[] args) {
         sfactory = new Configuration().configure().buildSessionFactory();
-        deleteEmployee(59);
+        deleteEmployee(68);
     }
 
     private static void deleteEmployee(int empId) {

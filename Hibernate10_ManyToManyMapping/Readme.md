@@ -36,6 +36,9 @@ mysql> desc ADDRESS;
       <many-to-one name="address" column="address" class="com.Address" unique="true"/>
 
 
+Hibernate: select certificat0_.employee_id as employee1_1_0_, certificat0_.certificate_id as certific2_1_0_,
+ certificat1_.certificate_id as certific1_0_1_, certificat1_.certificate_name as certific2_0_1_, certificat1_.certificate_type as certific3_0_1_ 
+ from EMP_CERT certificat0_ inner join CERTIFICATE certificat1_ on certificat0_.certificate_id=certificat1_.certificate_id where certificat0_.employee_id=?
 
 
 
