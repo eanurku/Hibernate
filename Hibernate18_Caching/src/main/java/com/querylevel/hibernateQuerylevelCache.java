@@ -62,7 +62,7 @@ public class hibernateQuerylevelCache {
             Query query = session.createQuery("from Employee");
 
             query.setCacheable(true);
-            query.setCacheRegion("employee");
+            query.setCacheRegion("employee.cache");
             query.list();
 
             Query query2 = othersession.createQuery("from Employee");

@@ -12,10 +12,6 @@ mysql> desc EMPLOYEE;
 | firstname    | varchar(22)   | YES  |     | NULL    |                |
 | lastname     | varchar(22)   | YES  |     | NULL    |                |
 | salary       | decimal(10,2) | YES  |     | NULL    |                |
-| address      | int(11)       | YES  |     | NULL    |                |
-| street_name  | varchar(22)   | YES  |     | NULL    |                |
-| city_name    | varchar(22)   | YES  |     | NULL    |                |
-| country_name | varchar(22)   | YES  |     | NULL    |                |
 +--------------+---------------+------+-----+---------+----------------+
 
 

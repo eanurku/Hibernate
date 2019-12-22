@@ -17,6 +17,7 @@ public class HibernateAnnotationBasedDelete {
         StandardServiceRegistry registry = null;
 
         try {
+
             registry = new StandardServiceRegistryBuilder()
                     .configure() // configures settings from hibernate.cfg.xml
                     .build();

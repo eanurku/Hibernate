@@ -16,34 +16,13 @@ public class HibernateMappingOneToOneInsert {
         sfactory = new Configuration().configure().buildSessionFactory();
 
         Address address = new Address("street", "city1", "state1", "country2");
-        addAddress(address);
-        Employee employee=new Employee("gonu3","kr",new BigDecimal("33.3"),address);
-        addEmployee(employee);
+        Employee employee1=new Employee("gonu3","kr",new BigDecimal("33.3"),address);
+        addEmployee(employee1);
+        Employee employee2=new Employee("gonu3","kr",new BigDecimal("33.3"),address);
+        addEmployee(employee2);
 
     }
 
-    private static void addAddress(Address addr) {
-
-        System.out.println("addr="+addr);
-        Session session = sfactory.openSession();
-        Transaction tx = null;
-        Integer returnId = null;
-        try {
-            tx = session.beginTransaction();
-
-            returnId = (Integer) session.save(addr);
-
-            tx.commit();
-        } catch (Exception e) {
-
-            if (tx != null) {
-                tx.rollback();
-            }
-        } finally {
-            session.close();
-        }
-        System.out.println("address return id="+returnId);
-    }
 
     private static void addEmployee(Employee emp) {
 
@@ -56,6 +35,7 @@ public class HibernateMappingOneToOneInsert {
              returnId = (Integer) session.save(emp);
 
             tx.commit();
+            System.out.println("employee return id="+returnId);
         } catch (Exception e) {
 
             if (tx != null) {
@@ -64,7 +44,7 @@ public class HibernateMappingOneToOneInsert {
         } finally {
             session.close();
         }
-        System.out.println("employee return id="+returnId);
+
 
     }
 

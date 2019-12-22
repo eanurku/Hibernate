@@ -22,16 +22,4 @@
         <persistence strategy="localTempSwap" />
     </cache>
 
-    <cache name="org.hibernate.cache.internal.StandardQueryCache"
-           maxEntriesLocalHeap="5"
-           eternal="false"
-           timeToLiveSeconds="120">
-        <persistence strategy="localTempSwap" />
-    </cache>
-    <cache name="org.hibernate.cache.spi.UpdateTimestampsCache"
-           maxEntriesLocalHeap="5000"
-           eternal="true">
-        <persistence strategy="localTempSwap" />
-    </cache>
-
 </ehcache>

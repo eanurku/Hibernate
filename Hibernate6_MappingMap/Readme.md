@@ -25,7 +25,6 @@ mysql> desc  CERTIFICATE;
 | certificate_name | varchar(22) | YES  |     | NULL    |                |
 | certificate_type | varchar(22) | YES  |     | NULL    |                |
 | employee_id      | int(11)     | YES  |     | NULL    |                |
-| index_value      | int(11)     | YES  |     | NULL    |                |
 | country          | varchar(22) | YES  |     | NULL    |                |
 +------------------+-------------+------+-----+---------+----------------+
 country is the index column in <map> tag.

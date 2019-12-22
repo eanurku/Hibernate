@@ -16,7 +16,7 @@
         <property name="firstname" type="string" column="firstname"/>
         <property name="lastname" type="string" column="lastname"/>
         <property name="salary" type="big_decimal" column="salary"/>
-        <many-to-one name="address" column="address" class="com.Address" />
+        <many-to-one name="address" column="address" class="com.Address" cascade="all"/>
 
     </class>
 

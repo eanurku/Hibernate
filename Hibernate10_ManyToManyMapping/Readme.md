@@ -12,29 +12,35 @@ mysql> desc EMPLOYEE;
 | firstname   | varchar(22)   | YES  |     | NULL    |                |
 | lastname    | varchar(22)   | YES  |     | NULL    |                |
 | salary      | decimal(10,2) | YES  |     | NULL    |                |
-| address     | int(11)       | NO   |     | NULL    |                |
 +-------------+---------------+------+-----+---------+----------------+
 
 4.primary key identifier should be set as auto_increment.
 
-5.setup ADDRESS table with fields as given below:
+5.setup  table with fields as given below:
+mysql> desc CERTIFICATE;
++------------------+-------------+------+-----+---------+----------------+
+| Field            | Type        | Null | Key | Default | Extra          |
++------------------+-------------+------+-----+---------+----------------+
+| certificate_id   | int(11)     | NO   | PRI | NULL    | auto_increment |
+| certificate_name | varchar(22) | YES  |     | NULL    |                |
+| certificate_type | varchar(22) | YES  |     | NULL    |                |
++------------------+-------------+------+-----+---------+----------------+
 
-mysql> desc ADDRESS;
-+------------+-------------+------+-----+---------+----------------+
-| Field      | Type        | Null | Key | Default | Extra          |
-+------------+-------------+------+-----+---------+----------------+
-| address_id | int(11)     | NO   | PRI | NULL    | auto_increment |
-| street     | varchar(22) | YES  |     | NULL    |                |
-| city       | varchar(22) | YES  |     | NULL    |                |
-| state      | varchar(22) | YES  |     | NULL    |                |
-| country    | varchar(22) | YES  |     | NULL    |                |
-+------------+-------------+------+-----+---------+----------------+
+6.
+mysql> desc EMP_CERT;
++----------------+---------+------+-----+---------+-------+
+| Field          | Type    | Null | Key | Default | Extra |
++----------------+---------+------+-----+---------+-------+
+| employee_id    | int(11) | NO   | PRI | NULL    |       |
+| certificate_id | int(11) | NO   | PRI | NULL    |       |
++----------------+---------+------+-----+---------+-------+
 
 
-
-5.in <many-to-one> tag with unique="true"
-      <many-to-one name="address" column="address" class="com.Address" unique="true"/>
-
+7.
+        <set name="certificates" cascade="all" table="EMP_CERT">
+            <key column="employee_id"/>
+            <many-to-many column="certificate_id" class="com.Certificate"/>
+        </set>
 
 Hibernate: select certificat0_.employee_id as employee1_1_0_, certificat0_.certificate_id as certific2_1_0_,
  certificat1_.certificate_id as certific1_0_1_, certificat1_.certificate_name as certific2_0_1_, certificat1_.certificate_type as certific3_0_1_ 

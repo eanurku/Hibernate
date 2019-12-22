@@ -3,7 +3,7 @@
 2. * download mysql connector jar from https://dev.mysql.com/downloads/connector/j/
    * add mysql jdbc driver in classpath if hibernate is going to work with mysql
 
-3.   setup EMPLOYEE table with fields as given below:
+3. setup EMPLOYEE table with fields as given below:
 mysql> desc EMPLOYEE;
 +-------------+---------------+------+-----+---------+----------------+
 | Field       | Type          | Null | Key | Default | Extra          |
@@ -14,6 +14,8 @@ mysql> desc EMPLOYEE;
 | salary      | decimal(10,2) | YES  |     | NULL    |                |
 | address     | int(11)       | NO   |     | NULL    |                |
 +-------------+---------------+------+-----+---------+----------------+
+
+ address is foreign key 
 
 4.primary key identifier should be set as auto_increment.
 

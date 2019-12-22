@@ -31,7 +31,6 @@
         </id>
         <property name="certificateName" type="string" column="certificate_name"/>
         <property name="certificateType" type="string" column="certificate_type"/>
-
     </class>
 
 </hibernate-mapping>
