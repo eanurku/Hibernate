@@ -14,7 +14,9 @@ mysql> desc EMPLOYEE;
 | salary       | decimal(10,2) | YES  |     | NULL    |                |
 +--------------+---------------+------+-----+---------+----------------+
 
+4. in hibernate.cfg.xml
 
+     <mapping class="com.Employee"/>
 
 
 

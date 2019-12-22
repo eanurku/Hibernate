@@ -28,5 +28,11 @@ mysql> desc CERTIFICATE;
 | employee_id      | int(11)     | YES  |     | NULL    |       |
 +------------------+-------------+------+-----+---------+-------+
 
+6.
+        <set name="certificates" cascade="all">
+            <key column="employee_id"/>
+            <one-to-many class="com.Certificate"/>
+        </set>
+
 
 

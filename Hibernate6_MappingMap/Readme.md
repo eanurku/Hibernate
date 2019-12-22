@@ -29,6 +29,12 @@ mysql> desc  CERTIFICATE;
 +------------------+-------------+------+-----+---------+----------------+
 country is the index column in <map> tag.
 
+6.        
+          <map name="certificates" cascade="all">
+              <key column="employee_id"/>
+              <index column="country" type="string"/>
+              <one-to-many class="com.Certificate" />
+          </map>
 
 
 

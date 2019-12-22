@@ -32,12 +32,9 @@ mysql> desc ADDRESS;
 | country    | varchar(22) | YES  |     | NULL    |                |
 +------------+-------------+------+-----+---------+----------------+
 
+5.
 
-
-5.in <many-to-one> tag
-        <many-to-one name="address" column="address" class="com.Address" />
-
-
+        <many-to-one name="address" column="address" class="com.Address" cascade="all"/>
 
 
 

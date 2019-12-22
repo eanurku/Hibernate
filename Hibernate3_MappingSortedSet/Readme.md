@@ -29,6 +29,12 @@ mysql> desc CERTIFICATE;
 
 6.In <sort> tag either set sort="natural" or use comparator class.
   Certificate class should be implementing comparable intereface in order for natural sort to work.
+  
+          <!--sort="natural" : use for natual order sorting -->
+          <set name="certificates" cascade="all" sort="com.mappingsortedset.MyClassForComparision">
+              <key column="employee_id"/>
+              <one-to-many class="com.Certificate"/>
+          </set>
 
 
 

@@ -28,7 +28,11 @@ mysql> desc CERTIFICATE;
 +------------------+-------------+------+-----+---------+----------------+
 so CERTIFICATE will have only foreign key reference(employee_id) and no other column.
 
-
+6.
+        <bag name="certificates" cascade="all">
+            <key column="employee_id"/>
+            <one-to-many class="com.Certificate"/>
+        </bag>
 
 
 

@@ -21,7 +21,12 @@ mysql> desc EMPLOYEE;
 
 4.primary key identifier should be set as auto_increment.
 
-5.in <component> tag
+5.
+        <component name="address" class="com.Address" >
+            <property name="street" column="street_name" type="string"/>
+            <property name="city" column="city_name" type="string"/>
+            <property name="country" column="country_name" type="string"/>
+        </component>
 
 
 

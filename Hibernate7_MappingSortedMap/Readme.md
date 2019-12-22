@@ -33,7 +33,12 @@ country is the index column in <map> tag.
 5.in <map> tag either set sort="natural" or use comparator class.
 Certificate class should be implementing comparable intereface in order for natural sort to work.
 
-
+        <!-- sort="natural" to sort based on natural order of keys of map-->
+        <map name="certificates" cascade="all" sort="com.mappingsortedmap.MyClassForComparision">
+            <key column="employee_id"/>
+            <index column="country" type="string"/>
+            <one-to-many class="com.Certificate" />
+        </map>
 
 
 

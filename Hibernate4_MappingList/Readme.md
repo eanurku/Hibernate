@@ -27,8 +27,16 @@ mysql> desc CERTIFICATE;
 | employee_id      | int(11)     | YES  |     | NULL    |                |
 | index_value      | int(11)     | YES  |     | NULL    |                |
 +------------------+-------------+------+-----+---------+----------------+
-index_value is is the position of certificate in certificate List under Employee Object.
+index_value is  the position of certificate in certificate List in Employee Object.
 Also it is list-index column in <list> tag.
+
+6.
+
+        <list name="certificates" cascade="all">
+            <key column="employee_id"/>
+            <list-index column="index_value"/>
+            <one-to-many class="com.Certificate"/>
+        </list>
 
 
 
