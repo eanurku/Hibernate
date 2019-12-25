@@ -32,6 +32,34 @@
 3. hibernate.cfg.xml file need to be in proper location in Application war file:
     WEB_INF/Classes/hibernate.cfg.xml
     WEB_INF/Classes/com/
-4.
-    
-    
+
+4.Start/Stop Rest Web  Service
+    start the tomcat service:
+        go to apache-tomcat-9.0.16/bin/
+        run ./startup.sh
+    install application war file in tomcat:
+        ant  install
+    uninstall previous war file and install latest war in tomcat:
+        ant uninstall install
+    launch the rest service now.....
+        http://localhost:8080//RestAppWithHibernate/test
+        http://localhost:8080//RestApp0/addEmployee
+    stop tomcat service:
+        go to apache-tomcat-9.0.16/bin/
+        run ./shutdown.sh
+5.Get Test:
+    method url    
+    GET     http://localhost:8080//RestAppWithHibernate/test
+    Accept:json
+6.POST :insert in DB
+    method url
+    POST    http://localhost:8080/RestAppWithHibernate/addEmployee
+    Headers:
+    Accept:application/xml
+    Content-Type:application/xml
+    Body:
+    <Employee>
+    	<firstname>anurag</firstname>
+    	<lastname>kum</lastname>
+    </Employee>
+    Response:
