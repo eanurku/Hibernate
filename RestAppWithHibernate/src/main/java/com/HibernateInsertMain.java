@@ -9,7 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.math.BigDecimal;
 
-public class HibernateAnnotationBasedtInsert {
+public class HibernateInsertMain {
 
     static SessionFactory sfactory;
     static void  setUp(){
