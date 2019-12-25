@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate7_MappingSortedMap/Hibernate7_MappingSortedMap.iml" filepath="$PROJECT_DIR$/Hibernate7_MappingSortedMap/Hibernate7_MappingSortedMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate8_ManyToOneMapping/Hibernate8_ManyToOneMapping.iml" filepath="$PROJECT_DIR$/Hibernate8_ManyToOneMapping/Hibernate8_ManyToOneMapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate9_OneToOneMapping/Hibernate9_OneToOneMapping.iml" filepath="$PROJECT_DIR$/Hibernate9_OneToOneMapping/Hibernate9_OneToOneMapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RestAppWithHibernate/RestAppWithHibernate.iml" filepath="$PROJECT_DIR$/RestAppWithHibernate/RestAppWithHibernate.iml" />
     </modules>
   </component>
 </project>

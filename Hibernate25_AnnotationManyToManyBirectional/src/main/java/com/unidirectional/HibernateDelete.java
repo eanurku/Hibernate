@@ -40,7 +40,7 @@ public class HibernateDelete {
 
         setUp();
 
-        deleteEmployee(90);
+        deleteEmployee(91);
 
 
 
