@@ -2,7 +2,11 @@ package com.model;
 
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
 @Table(name = "skill")
@@ -10,10 +14,12 @@ public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @JsonProperty("skill_id")
     int id;
 
 
     @Column(name = "skill_name")
+    @JsonProperty("skill_name")
     String skillName;
 
     public Skill() {

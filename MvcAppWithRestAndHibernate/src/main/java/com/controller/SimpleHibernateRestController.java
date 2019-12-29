@@ -8,10 +8,7 @@ import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -35,7 +32,7 @@ public class SimpleHibernateRestController {
     }
 
     @RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
-    public ResponseEntity<Boolean> addEmployeeDetails(@RequestBody Employee employee) {
+    public ResponseEntity<Boolean> addEmployeeDetails1(@RequestBody Employee employee) {
 
         System.out.println("employee details for creating record:" + employee);
         addEmployee(employee);
@@ -43,8 +40,45 @@ public class SimpleHibernateRestController {
         return new ResponseEntity<Boolean>(true, HttpStatus.CREATED);
     }
 
-    @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
-    public ResponseEntity<Integer> addStudentDetail(@RequestBody Student student) {
+    @RequestMapping(value = "/getStudentDetail/{id}", method = RequestMethod.GET)
+    public ResponseEntity<Student> getStudentDetail(@PathVariable("id") int studentId) {
+
+        System.out.println("student details for creating record:" + studentId);
+        Student student = getStudent(studentId);
+
+        System.out.println(student);
+        return new ResponseEntity<Student>(student, HttpStatus.CREATED);
+    }
+
+    private Student getStudent(int studentId) {
+
+        Session session = factoryutil.getSfactory().openSession();
+        Transaction tx = null;
+        Integer returnId = null;
+        Student student=new Student();
+        try {
+            tx = session.beginTransaction();
+
+             student = session.get(Student.class, studentId);
+
+
+            tx.commit();
+        } catch (Exception e) {
+
+            if (tx != null) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        System.out.println("student return id="+returnId);
+
+        return student;
+    }
+
+    @RequestMapping(value = "/addStudent1", method = RequestMethod.POST)
+    public ResponseEntity<Integer> addStudentDetail1(@RequestBody Student student) {
 
         System.out.println("student details for creating record:" + student);
         Integer returnId = addStudent(student);

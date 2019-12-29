@@ -30,7 +30,7 @@ public class Student {
 
     @Column(name = "contact")
     @JsonProperty("student_contact")
-    @Max(value = 200)
+    @Max(value = 9999999999L)
     Long studentContact;
 
     @Column(name = "dob")
@@ -38,11 +38,12 @@ public class Student {
     @Past
     Date studentDob;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "student_id")
-    @JsonProperty("student_dob")
-    List<Skill> studentSkills;
 
+    @ElementCollection
+    @CollectionTable( name = "skill",joinColumns = @JoinColumn(name = "student_id"))
+    @Column(name = "skill_name")
+    @JsonProperty("student_skills")
+    List<String> studentSkills;
 
 
     public Student() {
@@ -97,6 +98,14 @@ public class Student {
         this.studentDob = studentDob;
     }
 
+    public List<String> getStudentSkills() {
+        return studentSkills;
+    }
+
+    public void setStudentSkills(List<String> studentSkills) {
+        this.studentSkills = studentSkills;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -104,6 +113,7 @@ public class Student {
                 ", studentName='" + studentName + '\'' +
                 ", studentContact=" + studentContact +
                 ", studentDob=" + studentDob +
+                ", studentSkills=" + studentSkills +
                 '}';
     }
 }

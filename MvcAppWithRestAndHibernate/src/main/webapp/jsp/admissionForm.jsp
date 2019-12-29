@@ -28,8 +28,21 @@
         </tr>
 
         <tr>
+            <td> student skills:</td>
+             <td>
+            <select name="studentSkills" multiple>
+            <option value="java">java progg</option>
+            <option value="cpp">c plus plus</option>
+            <option value="php">php progg</option>
+            <option value="c">c progg </option>
+            </select>
+            </td>
+        </tr>
+
+        <tr>
             <td> <input type="submit" value="submit by clicking here"/></td>
         </tr>
+
 
 </table>
 

@@ -98,3 +98,62 @@ Date Mapping:
       <td> <input type="date" name="studentDob"/> </td>
       from log in spring:
       {studentName=anurag, studentContact=12, studentDob=2019-05-02}
+3.collection of basic types like String
+    https://stackoverflow.com/questions/5867130/hibernate-liststring
+    https://www.callicoder.com/hibernate-spring-boot-jpa-element-collection-demo/
+          
+4.
+       ----------------------
+      GET http://localhost:8080/MvcAppWithRestAndHibernate/getStudentDetail/76
+     
+      <Student>
+      <student_id>79</student_id>
+      <student_name>anurag</student_name>
+      <student_contact>21</student_contact>
+      <student_skills>
+      <student_skills>
+      <skill_id>12</skill_id>
+      <skill_name>sk11</skill_name>
+       </student_skills>
+      <student_skills>
+      <skill_id>13</skill_id>
+      <skill_name>sk22</skill_name>
+       </student_skills>
+       </student_skills>
+       </Student>
+       
+      {"student_id":79,
+       "student_name":"anurag",
+       "student_contact":21,
+       "student_skills":[{"skill_id":12,"skill_name":"sk11"},
+        {"skill_id":13,"skill_name":"sk22"}]
+        }
+5.
+      POST http://localhost:8080/MvcAppWithRestAndHibernate/addStudent1
+      
+      <Student>
+          <student_name>anurag</student_name>
+          <student_contact>21</student_contact>
+              <student_skills>
+                  <student_skills>
+                  <skill_name>sk11</skill_name>
+                  </student_skills>
+                  <student_skills>
+                  <skill_name>sk22</skill_name>
+                  </student_skills>
+              </student_skills>
+      </Student>
+      
+      {
+          "student_name":"anurag",
+          "student_contact":21,
+          "student_skills":
+              [
+                  {"skill_name":"sk11"},
+                  
+                  {"skill_name":"sk22"}
+              ]
+      }
+      
+       
+       ---------------------

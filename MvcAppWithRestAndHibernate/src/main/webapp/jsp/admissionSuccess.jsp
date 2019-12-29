@@ -22,6 +22,9 @@ ${student}
     <tr>
         <td>${student.studentDob}</td>
     </tr>
+        <tr>
+            <td>${student.studentSkills}</td>
+        </tr>
 </table>
 
 

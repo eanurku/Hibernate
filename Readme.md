@@ -34,3 +34,6 @@ org.hibernate.MappingException: Unknown entity: com.model.Student
 
 solution :
 add class mapping in hibernate.cfg.xml file
+5.
+Exception occured : org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: 
+com.model.Student.studentSkills, could not initialize proxy - no Session
