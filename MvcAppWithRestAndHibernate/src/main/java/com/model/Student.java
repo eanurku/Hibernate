@@ -2,7 +2,6 @@ package com.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.Max;
@@ -38,13 +37,15 @@ public class Student {
     @Past
     Date studentDob;
 
-
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable( name = "skill",joinColumns = @JoinColumn(name = "student_id"))
     @Column(name = "skill_name")
     @JsonProperty("student_skills")
     List<String> studentSkills;
 
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "address_id")
+    Address studentAddress;
 
     public Student() {
     }
@@ -106,6 +107,14 @@ public class Student {
         this.studentSkills = studentSkills;
     }
 
+    public Address getStudentAddress() {
+        return studentAddress;
+    }
+
+    public void setStudentAddress(Address studentAddress) {
+        this.studentAddress = studentAddress;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -114,6 +123,7 @@ public class Student {
                 ", studentContact=" + studentContact +
                 ", studentDob=" + studentDob +
                 ", studentSkills=" + studentSkills +
+                ", studentAddress=" + studentAddress +
                 '}';
     }
 }

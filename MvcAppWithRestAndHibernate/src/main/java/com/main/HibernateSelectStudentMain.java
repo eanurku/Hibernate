@@ -35,7 +35,7 @@ public class HibernateSelectStudentMain {
     public static void main(String[] args) {
 
         setUp();
-        getStudent(76);
+        getStudent(83);
 
     }
     private static void getStudent(Integer studentid) {
@@ -52,6 +52,7 @@ public class HibernateSelectStudentMain {
             for(String skill:skiills)
                 System.out.println(skill);
 
+            System.out.println(student.getStudentAddress());
             tx.commit();
         } catch (Exception e) {
 

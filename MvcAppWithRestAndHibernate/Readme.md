@@ -156,4 +156,20 @@ Date Mapping:
       }
       
        
-       ---------------------
+7.
+       <Student>
+           <studentAddress>
+               <address_id>4</address_id>
+               <address_country>india</address_country>
+               <address_state>bh</address_state>
+               <address_city>sm</address_city>
+               <address_pin>1232</address_pin>
+            </studentAddress>
+           <student_id>83</student_id>
+           <student_name>anurag1</student_name>
+           <student_contact>21</student_contact>
+           <student_skills>
+               <student_skills>sk11</student_skills>
+               <student_skills>sk22</student_skills>
+            </student_skills>
+        </Student>

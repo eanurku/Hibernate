@@ -15,6 +15,7 @@
         <mapping class="com.model.Employee"/>
         <mapping class="com.model.Student"/>
         <mapping class="com.model.Skill"/>
+        <mapping class="com.model.Address"/>
 
     </session-factory>
 </hibernate-configuration>

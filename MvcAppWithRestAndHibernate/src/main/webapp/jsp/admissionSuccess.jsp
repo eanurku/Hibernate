@@ -22,9 +22,26 @@ ${student}
     <tr>
         <td>${student.studentDob}</td>
     </tr>
-        <tr>
-            <td>${student.studentSkills}</td>
-        </tr>
+
+    <tr>
+        <td>${student.studentSkills}</td>
+    </tr>
+
+    <tr>
+        <td>${student.studentAddress.country}</td>
+    </tr>
+    <tr>
+        <td>${student.studentAddress.state}</td>
+    </tr>
+
+    <tr>
+        <td>${student.studentAddress.city}</td>
+    </tr>
+
+    <tr>
+        <td>${student.studentAddress.pin}</td>
+    </tr>
+
 </table>
 
 

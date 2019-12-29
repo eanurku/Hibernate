@@ -40,6 +40,15 @@
         </tr>
 
         <tr>
+            <td>student address :</td>
+            <td>country:</td> <td> <input type="text" name="studentAddress.country"/> </td>
+            <td>state:</td> <td> <input type="text" name="studentAddress.state"/> </td>
+            <td>city:</td> <td> <input type="text" name="studentAddress.city"/> </td>
+            <td>pin:</td> <td> <input type="text" name="studentAddress.pin"/> </td>
+        </tr>
+
+
+        <tr>
             <td> <input type="submit" value="submit by clicking here"/></td>
         </tr>
 
