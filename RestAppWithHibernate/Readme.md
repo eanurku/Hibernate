@@ -29,7 +29,7 @@
     stax2-api-3.1.4.jar
 
  
-3. hibernate.cfg.xml file need to be in proper location in Application war file:
+3. hibernate.cfg.xml file need to be in classpath location in Application war file:
     WEB_INF/Classes/hibernate.cfg.xml
     WEB_INF/Classes/com/
 
@@ -63,3 +63,4 @@
     	<lastname>kum</lastname>
     </Employee>
     Response:
+    <Boolean>true</Boolean>

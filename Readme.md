@@ -28,3 +28,9 @@ set strategy to Identity in GeneratedValue annotation as given below instead of 
 
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 
+4.
+ERROR:
+org.hibernate.MappingException: Unknown entity: com.model.Student
+
+solution :
+add class mapping in hibernate.cfg.xml file

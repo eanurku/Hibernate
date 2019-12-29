@@ -4,6 +4,7 @@
     <property name="app.name" value="RestAppWithHibernate"/>
 
     <property name="dist.dir" value="dist"/>
+    <property name="dist.dir.lib" value="dist/lib"/>
     <property name="lib.dir" value="lib"/>
     <property name="lib.dev.dir" value="lib-dev"/>
     <property name="src.dir" value="src/main/java"/>
@@ -77,14 +78,19 @@
             </fileset>
         </copy>
     </target>
-    <target name="war" depends="unitTest,copyResources">
+
+    <target name="copyRequiredJars">
+        <copy todir="${dist.dir.lib}" flatten="true">
+            <fileset dir="${lib.dir}">
+                <include name="**/*.jar"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="war" depends="unitTest,copyResources,copyRequiredJars">
         <war file="${dist.dir}/${app.name}.war" webxml="${webapp.dir}/web.xml">
 
-            <lib dir="lib/rest"/>
-            <lib dir="lib/json"/>
-            <lib dir="lib/xml"/>
-            <lib dir="lib/hibernate"/>
-
+            <lib dir="${dist.dir.lib}"/>
             <classes dir="${build.classes}"/>
             <webinf dir="${webapp.dir}"/>
         </war>
