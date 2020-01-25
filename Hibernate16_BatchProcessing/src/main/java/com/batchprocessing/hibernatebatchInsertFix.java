@@ -39,7 +39,7 @@ public class hibernatebatchInsertFix {
         try{
             tx=session.beginTransaction();
 
-            for(int i=1;i<10;i++){
+            for(int i=1;i<100000;i++){
                 Employee emp=new Employee("me","kumar",new BigDecimal("1200"));
                 returnId= (Integer) session.save(emp);
                 System.out.println(returnId);

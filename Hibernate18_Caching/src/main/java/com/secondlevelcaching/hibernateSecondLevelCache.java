@@ -59,18 +59,18 @@ public class hibernateSecondLevelCache {
 
             printStats(emp,stats,0);
 
-            emp=session.load(Employee.class,25);
+            emp=session.load(Employee.class,90);
             printStats(emp,stats,1);
 
 
-            emp=session.load(Employee.class,25);
+            emp=session.load(Employee.class,90);
             printStats(emp,stats,2);
 
             session.evict(emp);
-            emp=session.load(Employee.class,25);
+            emp=session.load(Employee.class,90);
             printStats(emp,stats,3);
 
-            emp=othersession.load(Employee.class,25);
+            emp=othersession.load(Employee.class,90);
             printStats(emp,stats,4);
 
 

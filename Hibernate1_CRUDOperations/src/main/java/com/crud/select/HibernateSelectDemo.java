@@ -13,7 +13,7 @@ public class HibernateSelectDemo {
     public static void main(String[] args) {
 
         sfactory=new Configuration().configure().buildSessionFactory();
-        getEmployee(4);
+        getEmployee(70);
 
     }
 
