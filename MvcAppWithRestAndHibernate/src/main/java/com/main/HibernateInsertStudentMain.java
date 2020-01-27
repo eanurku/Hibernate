@@ -4,7 +4,6 @@ import com.model.Address;
 import com.model.Employee;
 import com.model.Skill;
 import com.model.Student;
-import jdk.internal.dynalink.linker.LinkerServices;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

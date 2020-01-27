@@ -48,7 +48,7 @@
         go to apache-tomcat-9.0.16/bin/
         run ./shutdown.sh
 5.Get Test:
-    method url    
+    method url
     GET     http://localhost:8080//RestAppWithHibernate/test
     Accept:json
 6.POST :insert in DB
