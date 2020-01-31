@@ -5,7 +5,7 @@
 <hibernate-mapping >
 
     <!--Employee class to EMPLOYEE table mapping -->
-    <class name="com.Employee" table="EMPLOYEE">
+    <class name="com.model.Employee" table="EMPLOYEE">
         <meta attribute="class-description">
             test class
         </meta>

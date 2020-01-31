@@ -16,7 +16,7 @@ mysql> desc EMPLOYEE;
 
 4. in hibernate.cfg.xml
 
-     <mapping class="com.Employee"/>
+     <mapping class="com.model.Employee"/>
 
 
 

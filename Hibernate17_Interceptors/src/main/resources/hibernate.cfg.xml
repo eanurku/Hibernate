@@ -14,7 +14,7 @@
         <property name="hibernate.jdbc.batch_size">50</property>
 
 
-        <mapping class="com.Employee"/>
+        <mapping class="com.model.Employee"/>
 
 
     </session-factory>

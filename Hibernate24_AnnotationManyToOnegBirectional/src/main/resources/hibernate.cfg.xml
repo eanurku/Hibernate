@@ -11,7 +11,7 @@
         <property name="show_sql">true</property>
 
 
-        <mapping class="com.Employee"/>
+        <mapping class="com.model.Employee"/>
         <mapping class="com.Address"/>
 
     </session-factory>

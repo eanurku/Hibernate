@@ -64,3 +64,17 @@
     </Employee>
     Response:
     <Boolean>true</Boolean>
+7.POST :insert in DB
+    method url
+    POST    http://localhost:8080/RestAppWithHibernate/addEmployee
+    Headers:
+    Accept:application/json
+    Content-Type:application/json
+    Body:
+     {
+    "firstname": "monua",
+    "lastname": "l1",
+    "salary": 23.6
+    }
+    Response:
+    true    

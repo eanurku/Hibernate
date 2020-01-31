@@ -29,8 +29,11 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate7_MappingSortedMap/Hibernate7_MappingSortedMap.iml" filepath="$PROJECT_DIR$/Hibernate7_MappingSortedMap/Hibernate7_MappingSortedMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate8_ManyToOneMapping/Hibernate8_ManyToOneMapping.iml" filepath="$PROJECT_DIR$/Hibernate8_ManyToOneMapping/Hibernate8_ManyToOneMapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate9_OneToOneMapping/Hibernate9_OneToOneMapping.iml" filepath="$PROJECT_DIR$/Hibernate9_OneToOneMapping/Hibernate9_OneToOneMapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateIntegrationWithSpring/HibernateIntegrationWithSpring.iml" filepath="$PROJECT_DIR$/HibernateIntegrationWithSpring/HibernateIntegrationWithSpring.iml" />
       <module fileurl="file://$PROJECT_DIR$/MvcAppWithRestAndHibernate/MvcAppWithRestAndHibernate.iml" filepath="$PROJECT_DIR$/MvcAppWithRestAndHibernate/MvcAppWithRestAndHibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MvcAppWithRestAndHibernateIntegratedBySpringORM/MvcAppWithRestAndHibernateIntegratedBySpringORM.iml" filepath="$PROJECT_DIR$/MvcAppWithRestAndHibernateIntegratedBySpringORM/MvcAppWithRestAndHibernateIntegratedBySpringORM.iml" />
       <module fileurl="file://$PROJECT_DIR$/RestAppWithHibernate/RestAppWithHibernate.iml" filepath="$PROJECT_DIR$/RestAppWithHibernate/RestAppWithHibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RestAppWithHibernateIntegrationBySpringORM/RestAppWithHibernateIntegrationBySpringORM.iml" filepath="$PROJECT_DIR$/RestAppWithHibernateIntegrationBySpringORM/RestAppWithHibernateIntegrationBySpringORM.iml" />
     </modules>
   </component>
 </project>

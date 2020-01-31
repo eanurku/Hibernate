@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM">
+      <sourceFolder url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/src/main/webapp" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/src/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib-dev" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib-dev" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/hibernate" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/hibernate" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/json" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/json" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/orm" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/orm" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/orm" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/orm" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/rest" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/rest" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/rest" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/rest" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/springjdbc" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/springjdbc" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/springjdbc" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/springjdbc" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/xml" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../RestAppWithHibernateIntegrationBySpringORM/lib/xml" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

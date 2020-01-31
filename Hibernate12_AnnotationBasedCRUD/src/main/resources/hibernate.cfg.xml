@@ -12,7 +12,7 @@
         <property name="hibernate.connection.password">root1234</property>
 
 
-        <mapping class="com.Employee"/>
+        <mapping class="com.model.Employee"/>
 
 
     </session-factory>
