@@ -36,6 +36,7 @@ public class HibernateInsertMain3 {
         id= employeeDAOHibernateImpl.saveEmployee(employee);
         System.out.println("return id="+id);
 
+        //
 
 
     }

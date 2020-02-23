@@ -3,7 +3,7 @@
 <hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
 
     <!--Employee class to EMPLOYEE table mapping -->
-    <class name="com.model.Employee" table="EMPLOYEE">
+    <class name="com.Employee" table="EMPLOYEE">
         <meta attribute="class-description">
             test class
         </meta>
